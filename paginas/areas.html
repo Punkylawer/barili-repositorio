@@ -4,10 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/styles.css"/>
+    
+    <!-- CSS comentado-->
+    <!-- <link rel="stylesheet" href="../css/styles.css"/> -->
+    <!--Main SCSS-->
+    <link rel="stylesheet" href="../sass/main.css"/>
+    <!--Bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/1f2213274b.js" crossorigin="anonymous"></script>
+    <!-- Titulo / Descripcion /Keywords -->
     <title>Barili y Asociados - Áreas de práctica</title>
+    <meta name="description" content="Estudio Jurídico de larga trayectoria y altamente especializado,ubicado en la ciudad de Mar del Plata">
+    <meta name="keywords" content="Estudio Juridico, altamente especializado, áreas de práctica, derecho público, derecho civil, derecho empresarial, derecho laboral."> 
 </head>
 <body class="body">
 
@@ -41,7 +49,7 @@
     </header>
 
     <!-- Comienzo seccion areas de práctica -->
-    <main>
+    <main class="main">
         <section class="section">
             <article class="areas">
                 <h2 class="areas__h2">AREAS DE PRÁCTICA</h2>
@@ -49,14 +57,28 @@
                 <p class="areas__p1">Actualmente, atento la cambiante realidad negocial del país y el incremento de los recursos humanos, el Estudio se ha especializado en otras áreas jurídicas tales como el Derecho Previsional, el Derecho Laboral, el Derecho Societario, el Derecho Comercial.</p>
                 <p class="areas__p2">Expondremos a continuación nuestra actividad profesional en cada área mencionada, debiendo resaltar de antemano que la atención personalizada del cliente y sus necesidades, el celo a la hora de evaluar conflictos de intereses, y por sobre todo, la ética profesional y la alta especialización, son características de nuestro modo de trabajar, sin importar a que materia pertenezca el caso a tratar.</p>
             </article>
-            <article class="lista">
+            <article class="lista-materias">
+            <div class="card">
+                <div class="card-header">
+                Materias
+                </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Derecho Empresarial.</li>
+                        <li class="list-group-item">Derecho Público.</li>
+                        <li class="list-group-item">Derecho Laboral.</li>
+                        <li class="list-group-item">Derecho Civil.</li>
+                    </ul>
+            </div>
+            </article>
+            
+            <!-- <article class="lista">
                 <ul class="lista__ul">
                     <li class="lista__ul-li">Derecho Público</li>
                     <li class="lista__ul-li">Derecho Civil</li>
                     <li class="lista__ul-li">Derecho Empresarial</li>
                     <li class="lista__ul-li">Derecho Laboral</li>
                 </ul>
-            </article>
+            </article> -->
         </section>
     </main>
 <!-- Footer reducido en esta pagina -->

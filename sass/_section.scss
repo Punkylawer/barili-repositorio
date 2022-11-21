@@ -1,0 +1,280 @@
+/* Index */
+
+.main {
+    grid-row: 2/3;
+    overflow: scroll;
+}
+
+.buscar {
+    position:relative;
+    padding:5px;
+    text-align: right;
+        .buscar__input {
+            width: 300px;
+            height:40px;
+            padding:0 20px;
+            font-size:18px;
+            color:#5d6d7e;
+            outline: none;
+            border:1px solid grey;
+            border-radius: 20px;
+                .buscar__boton {
+                    width: 150px;
+                    height:40px;
+                    padding:0 20px;
+                    font-size:18px;
+                    color:#5d6d7e;
+                    outline: none;
+                    border:1px solid grey;
+                    border-radius: 20px;
+                    }
+        }
+    }
+
+    .articulo{
+        width: 13em;
+        height:15em;
+        background-color:#f8f9f9;
+            .articulo__h2 {
+                font-size: medium;
+                font-style:$ItalicStyle;
+                text-align: left;
+                white-space: nowrap;
+                font-size: 2em;
+                }
+            .articulo__h2-a {
+                text-decoration: none;
+                color:#000000;
+                text-align:left;
+                        }
+            .articulo__h2-a:hover {
+            background-color: #f7dc6f;        
+                    }
+            }
+            .col__p { 
+            animation-duration: 5s;
+            animation-name: slidein;
+            }     
+        @keyframes slidein {
+        from {
+            margin-left: 100%;
+            width: 300%
+        }
+        
+        to {
+            margin-left: 0%;
+            width: 100%;
+        }
+        }
+        .news {
+            width: 10em;
+            height:10em;
+            background-color:#f8f9f9;
+                .news__p-a {
+                    text-decoration: none;
+                    color:#000000;
+                    text-align:left;
+                }
+                .news__p-a:hover {
+                    background-color: #f7dc6f;
+                }
+                .col__pnews {
+                    animation-duration: 3s;
+                    animation-name: slidein;
+                    animation-iteration-count: infinite;
+                    animation-direction: alternate;
+                }
+        }
+        
+/* Nosotros */
+.main {
+    grid-row: 2/3;
+    overflow: scroll;
+        .section {
+            height: 430px;
+            .nosotros {
+                .nosotros__h2 {
+                    color:$ColorPrincipal;
+                    padding:1em;
+                    margin:1em;
+                    text-align: center;
+                    letter-spacing: 1.5rem;
+                }
+                .nosotros__p {
+                    color:$ColorPrincipal;
+                    line-height:$HeightNosotros;
+                    font-size:$SizeNosotros;
+                    text-align: justify;
+                    text-indent:$IndentText;
+                }
+                .nosotros__p1 {
+                    color:$ColorPrincipal;
+                    line-height:$HeightNosotros;
+                    font-size:$SizeNosotros;
+                    text-align: justify;
+                    text-indent:$IndentText;
+                }
+                .nosotros__p2 {
+                    color:$ColorPrincipal;
+                    line-height:$HeightNosotros;
+                    font-size:$SizeNosotros;
+                    text-align: justify;
+                    text-indent:$IndentText;
+                }
+                .nosotros__h2 {
+                    color:$ColorPrincipal;
+                    padding:1em;
+                    margin:1em;
+                    text-align: center;
+                    letter-spacing: 1.5rem;
+                }
+                .nosotros__p {
+                    color:$ColorPrincipal;
+                    line-height:$HeightNosotros;
+                    font-size:$SizeNosotros;
+                    text-align: justify;
+                    text-indent:$IndentText;
+                }
+                .nosotros__p1 {
+                    color:$ColorPrincipal;
+                    line-height:$HeightNosotros;
+                    font-size:$SizeNosotros;
+                    text-align: justify;
+                    text-indent:$IndentText;
+                }
+                .nosotros__p2 {
+                    color:$ColorPrincipal;
+                    line-height:$HeightNosotros;
+                    font-size:$SizeNosotros;
+                    text-align: justify;
+                    text-indent:$IndentText;
+                }
+                .nosotros__p3 {
+                    color:$ColorPrincipal;
+                    line-height:$HeightNosotros;
+                    font-size:$SizeNosotros;
+                    text-align: justify;
+                    text-indent:$IndentText;
+                }
+                .slidein {
+                    animation-duration: 3s;
+                    animation-name: slidein;
+                    animation-iteration-count: 3;
+                    animation-direction: alternate;
+                }
+                
+                @keyframes slidein {
+                    from {
+                    margin-left:100%;
+                    width:300%
+                    }
+                
+                    to {
+                    margin-left:0%;
+                    width:100%;
+                    }
+                }   
+            }
+    }
+}
+/* Areas */
+.main {
+    grid-row: 2/3;
+    overflow: scroll;
+        .section {
+            height: 430px;
+                .areas {
+                    .areas__h2 {
+                        color:$ColorPrincipal;
+                        padding:1em;
+                        margin:1em;
+                        text-align: center;
+                        letter-spacing: 1.5rem;
+                    }
+                    .areas__p {
+                        color:$ColorPrincipal;
+                        line-height:$HeightNosotros;
+                        font-size:$SizeNosotros;
+                        text-align: justify;
+                        text-indent:$IndentText;
+                    }
+                    .areas__p1 {
+                        color:$ColorPrincipal;
+                        line-height:$HeightNosotros;
+                        font-size:$SizeNosotros;
+                        text-align: justify;
+                        text-indent:$IndentText;
+                    }
+                    .areas__p2 {
+                        color:$ColorPrincipal;
+                        line-height:$HeightNosotros;
+                        font-size:$SizeNosotros;
+                        text-align: justify;
+                        text-indent:$IndentText;
+                    }
+                }
+                .lista-materias {
+                    min-height: 500px;
+                    padding: 30px;
+                    .card {
+                        width: 80%;
+                        max-width: 600px;
+                        margin: 20px;
+                            .card-header {
+                                font-weight: bold;
+                            }  
+                        }
+                }
+}
+}
+/* Equipo */
+
+.main {
+    grid-row:2/3;
+    margin-top: 2.5em;
+    overflow: scroll;
+        .curriculum {
+            .cv__div-1 {
+                background-size: cover;
+                background-repeat: no-repeat;
+                height:200px;
+            }
+            .cv__div2-2 {
+                background-size: cover;
+                background-repeat: no-repeat;
+                height:200px;
+            }
+            .cv__div3-3 {
+                background-size: cover;
+                background-repeat: no-repeat;
+                height:200px;   
+            }
+        }
+        .carta {
+            .letters__p {
+                color:$ColorPrincipal;
+                font-size: 1.8em;
+                margin: 1em;
+            }
+            .letters_i {
+                background-size: cover;
+                background-repeat: no-repeat;
+                height: 60px;
+                width: 50px;
+            }
+        }
+    }
+/* Contacto */
+
+.main {
+    grid-row: 2/3;
+    overflow: scroll;
+    }
+                    
+    .contacto__ul {
+        color:$ColorPrincipal;
+        list-style: none;
+        line-height: 2em;
+        font-size: 1.5em;
+        }
+        

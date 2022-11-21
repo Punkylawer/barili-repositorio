@@ -1,0 +1,34 @@
+
+@import "vars";
+@import "header";
+@import "section";
+@import "footer";
+@import "media";
+
+/* Comienzo estilos generales */
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.body {
+    background-color:#8405F0;
+    background-image:url(../imagenes/fondoazul.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.contenedor {
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "header header"
+    "main main"
+    "piecontacto piecontacto";
+    background-image:url(../imagenes/fondoazul.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+

@@ -4,7 +4,6 @@
     box-sizing: border-box;
 }
 
-
 .body {
     background-color:#8405F0;
     background-image:url(../imagenes/fondoazul.jpg);
@@ -96,6 +95,7 @@
     padding:5px;
     text-align: right;
     }
+
 .buscar__input {
     width: 300px;
     height:40px;
@@ -107,6 +107,7 @@
     border-radius: 20px;
 
 }
+
 .buscar__boton {
     width: 150px;
     height:40px;
@@ -138,8 +139,10 @@
 .articulo__h2-a:hover {
     background-color: #f7dc6f;
 }
+
+/*
 .articulo__p {
-   /* font-size:medium;
+    font-size:medium;
     font-style:initial;
     text-align:justify;
     color:#000000;
@@ -147,10 +150,13 @@
     padding-top:1em;
     padding-left:0.4em;
     padding-right:0.4em;
-    margin:0.2em; */
-}
-.col__p { animation-duration: 5s;
-  animation-name: slidein;
+    margin:0.2em; 
+*/
+
+    
+.col__p { 
+    animation-duration: 5s;
+    animation-name: slidein;
 }
 
 @keyframes slidein {
@@ -170,16 +176,20 @@ to {
     height:10em;
     background-color:#f8f9f9;
 }
+
+/*
 .news__p {
-    /* font-size: medium;
+    font-size: medium;
     font-style:italic;
     font-weight: bold;
     color:#000000;
     text-align: center;
     white-space: nowrap;
     padding: 0.2em;
-    margin:0.2em; */
-}
+    margin:0.2em; 
+    }
+    */
+    
 .news__p-a {
     text-decoration: none;
     color:#000000;
@@ -194,8 +204,10 @@ animation-name: slidein;
 animation-iteration-count: infinite;
 animation-direction: alternate;
 }
+
+/*
 .news__p2 {
-    /* font-size:medium;
+    font-size:medium;
     font-style:initial;
     text-align:justify;
     color:#000000;
@@ -203,14 +215,17 @@ animation-direction: alternate;
     padding-top:1em;
     padding-left:0.4em;
     padding-right:0.4em;
-    margin:0.2em; */
+    margin:0.2em; 
 }
+ */
+    
 .main__section{
     display:flex;
     flex-direction:row;
 }
 
 /* COMIENZO FOOTER */
+
 .footer {
     background-color:#000000;
     width:100%;
@@ -223,11 +238,14 @@ animation-direction: alternate;
     flex-direction:row;
     justify-content:space-between;
 }
+
+
 .seccionBaja__div {
     display:flex;
     flex-direction:column;
     margin:25px;
     }
+
 
 .section {
     height: 430px;
@@ -422,6 +440,8 @@ text-indent: 2.5em;
     bottom: 30em;
     left:19em;
 }
+
+/*
 .formu {
     background-color: white;
     border-radius: 8px;
@@ -442,6 +462,8 @@ text-indent: 2.5em;
     width: 13em;
     cursor:pointer;
 }
+*/
+
 .divcontacto {
     position: relative;
     left:47em;
@@ -464,7 +486,7 @@ text-indent: 2.5em;
     grid-template-areas:
     ". .";
 }
-
+/*
 .container__form {
     display: grid;
     grid-auto-columns: 1fr;
@@ -475,6 +497,7 @@ text-indent: 2.5em;
     "."
     ".";
 }
+*/
 
 .container__equipo {
     display: grid;

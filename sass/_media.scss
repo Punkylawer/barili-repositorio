@@ -1,0 +1,148 @@
+/* COMIENZO MEDIAS QUERIES */
+@media screen and (max-width:950px){
+    .header-mobile {
+        display:block;
+    }
+    .header-desktop {
+        display:none;
+    }
+}
+
+@media screen and (max-width:480px) and (max-height: 865px), (max-width: 865px) and (max-height: 480px) , (max-width:1024x) {
+
+    .body {
+        background-color: olive;
+        height: -webkit-fill-available;
+    }
+
+    .header {
+        background-image: url(../imagenes/mar.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 70px;
+        display: inline-flex;
+        grid-column: 1/2;
+        grid-area: header;
+        margin-bottom: 0;
+        padding: 12px;
+            .header__h1 {
+                font-size: 1.4em;
+                white-space: nowrap;
+                padding: 0;
+                margin-bottom: 0;
+            }
+            .header-desktop {
+                    .header__nav {
+                        .nav__ul {
+                            display: flex;
+                            flex-flow: row;
+                            flex-wrap: wrap;
+                            align-items: center;
+                            margin-top:4.4em;
+                            margin-right: 25em;
+                            white-space: nowrap;
+                            display: none;
+                            }
+                    }
+            }
+    }
+
+    .container__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .contenedor {
+        display:grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.50fr 6fr 1fr;
+        grid-template-areas:
+        "header"
+        "main"
+        "piecontacto";
+        height: 100vh;
+    }
+    .main {
+        grid-area:main;
+        overflow: scroll;
+    }
+
+    .buscar {
+        position:relative;
+            .buscar__input {
+                width: 10.5em;
+                height:1.8em;
+                padding:0 20px;
+                font-size:18px;
+                color:#5d6d7e;
+                outline: none;
+                border:$BorderSolid;
+                border-radius:$RadioBorder;
+                }
+            .buscar__boton {
+                    width: 4.5em;
+                    height:1.8em;
+                    padding:0 20px;
+                    font-size:18px;
+                    color:#5d6d7e;
+                    outline: none;
+                    border:$BorderSolid;
+                    border-radius:$RadioBorder;
+                }
+            }
+
+    .piecontacto {
+        grid-area:piecontacto;
+        }
+
+    .piecontacto {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        background-color: #000000;
+        color:$ColorPrincipal;
+        height: 5em;
+        bottom: 0;
+        position: absolute;
+        grid-row: 3/4;
+            .seccionBaja {
+                flex-direction: column;
+                align-items: center;
+                margin:auto;
+                    .seccionBaja__h2 {
+                        font-size: 1.5em;
+                        align-items: center;
+                        margin:auto;
+                        }
+                        
+                    .piecontacto__div {
+                        width: 1em;
+                        height: 1em;
+                        margin: auto;
+                    }
+        }
+} 
+}
+
+.slidein {
+    animation-duration: 3s;
+    animation-name: slidein;
+    animation-iteration-count: 3;
+    animation-direction: alternate;
+}
+
+@keyframes slidein {
+    from {
+    margin-left:100%;
+    width:300%
+    }
+
+    to {
+    margin-left:0%;
+    width:100%;
+    }
+}

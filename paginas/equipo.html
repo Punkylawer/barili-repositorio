@@ -4,10 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/styles.css"/>
+    <!-- CSS comentado-->
+    <!-- <link rel="stylesheet" href="../css/styles.css"/> -->
+    <!--Main SCSS-->
+    <link rel="stylesheet" href="../sass/main.css"/>
+    <!--Bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/1f2213274b.js" crossorigin="anonymous"></script>
+    <!-- Titulo / Descripcion /Keywords -->
     <title>Barili y Asociados - Equipo</title>
+    <meta name="description" content="Estudio Jurídico de larga trayectoria y altamente especializado,ubicado en la ciudad de Mar del Plata">
+    <meta name="keywords" content="Estudio Juridico, equipo, curriculum, trayectoria, composicion, redes sociales."> 
 </head>
 <body class="body">
 
@@ -17,7 +24,7 @@
         <div class="dropdown header-mobile">
             <button class="btn btn-dark" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                 <i class="fa fa-bars" aria-hidden="true"></i>
-              </button>
+            </button>
                 <ul class="dropdown-menu" >
                     <li><a class="dropdown-item" href="../index.html">INICIO</a></li>
                     <li><a class="dropdown-item" href="nosotros.html">NOSOTROS</a></li>
@@ -40,25 +47,31 @@
     </header>
 
     <!--Comienzan las fotos y las news-->
-    <main>
-        <section class="container__equipo">
-                <div>
-                    <img src="../imagenes/cara5.jpg" class="cv__div-1">
+
+    <main class="main">
+        <div class="container-fluid">
+            <div class="col-12 col-md-12">
+            <div class="row">    
+                <div class="col-sm-2 col-xs-12 curriculum">
+                    <img src="../imagenes/alejandro.jpg" class="cv__div2-2 img-thumbnail">
                 </div>
-                <div>
-                    <img src="../imagenes/alejandro.jpg" class="cv__div2-2">
+                <div class="col-sm-2 col-xs-12 curriculum">
+                    <img src="../imagenes/cara5.jpg" class="cv__div2-2 img-thumbnail">
                 </div>
-                <div>
-                    <img src="../imagenes/michelle.jpg" class="cv__div3-3">
+                <div class="col-sm-2 col-xs-12 curriculum">    
+                    <img src="../imagenes/michelle.jpg" class="cv__div3-3 img-thumbnail">
                 </div>
-                <div>
+                <div class="col-sm-4 col-xs-12 carta">
                     <img src="../imagenes/newsletters.jpg" class="letters__i" width="450">
                     <p class="letters__p"><span>Suscríbase a nuestras newsletters</span></p>
-                </div>
-        </section>
+                </div>     
+            </div>
+            </div>
+        </div>
     </main>
-            <!-- Acá arranca el FOOTER -->
-<footer class="piecontacto">
+
+    <!-- Acá arranca el FOOTER -->
+    <footer class="piecontacto">
     <section class="seccionBaja">
             <h2>Barili y Asociados</h2> 
             <small><i class="fa-regular fa-copyright"></i> Copy-Right <b>- LNB</b> - Todos los derechos reservados.</small>
@@ -86,7 +99,7 @@
                 </a>
             </div>
     </section>
-</footer>
+    </footer>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 
 </body>

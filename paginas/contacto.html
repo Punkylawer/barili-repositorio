@@ -4,12 +4,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/styles.css"/>
+    <!-- CSS comentado-->
+    <!-- <link rel="stylesheet" href="../css/styles.css"/> -->
+    <!-- Main SCSS-->
+    <link rel="stylesheet" href="../sass/main.css"/>
+    <!-- Bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/1f2213274b.js" crossorigin="anonymous"></script>
+    <!-- Titulo / Descripcion /Keywords -->
     <title>Barili y Asociados - Contacto</title>
+    <meta name="description" content="Estudio Jurídico de larga trayectoria y altamente especializado,ubicado en la ciudad de Mar del Plata">
+    <meta name="keywords" content="Estudio Juridico, Mar del Plata, dirección, teléfono, contacto, formulario contacto, formulario consultas, redes sociales"> 
+
 </head>
 <body class="body">
+    <div class="contenedor">
 
     <!--Comienzo header y nav -->
     <header class="header container__header">
@@ -39,47 +48,49 @@
         </div>
     </header>
 
-        <!--cuerpo con datos y formulario -->
-    <main>
-        <div class="container">
-            <section style="padding: 10%; color: wheat; ">
-                <h2>CONTACTO</h2>
-                <nav class="contacto">
-                    <ul class="contacto__ul">
-                        <li class="contacto__ul-li"><i class="fa-regular fa-location-dot"></i> - Dirección Hipólito Yrigoyen 2811 Primero A,<br> ciudad de Mar del Plata.</li>
-                        <li class="contacto__ul-li"><i class="fa-solid fa-phone"></i> - *54 9 223-4916709.</li>
-                        <li class="contacto__ul-li"><i class="fa-sharp fa-solid fa-envelope"></i> - info@estudiobariliyasoc.com.ar</li>
-                    </ul>
-                </nav>
-            </section>
-            <section class="container__form">
-                <div style="color: wheat;">
-                    <h3>FORMULARIO DE CONTACTO</h3>
-                    <p>Complete sus datos personales y escriba una consulta:</p>
+    <!--Main contacto y formulario -->
+    <main class="main">
+        <div>
+            <div class="row justify-content-around">
+                <div class="col-12 col-md-6">
+                    <h2>CONTACTO</h2>
+                    <nav>
+                        <ul class="contacto__ul">
+                            <li class="contacto__ul-li"><i class="fa-regular fa-location-dot"></i> - Dirección Hipólito Yrigoyen 2811 Primero A,<br> ciudad de Mar del Plata.</li>
+                            <li class="contacto__ul-li"><i class="fa-solid fa-phone"></i> - *54 9 223-4916709.</li>
+                            <li class="contacto__ul-li"><i class="fa-sharp fa-solid fa-envelope"></i> - info@estudiobariliyasoc.com.ar</li>
+                        </ul>
+                    </nav>
                 </div>
-                <div style="color: white;">
-                    <form action="" style="display: grid;">    
-                        <div style="display:inline-grid">
-                            <label for="nombreApellido">Nombre y Apellido: </label>
-                            <input type="text" id="nombreApellido" name="nombre-apellido" class="formu__div-input"/>
-                        </div>
-                        <div style="display:inline-grid">
-                            <label for="celular">Celular: </label>
-                            <input type="tel" id="celular" name="numero-de-telefono" class="formu__div-input"/>
-                        </div>
-                        <div style="display:inline-grid">    
-                            <label for="mail">Correo Electrónico: </label>
-                            <input type="email" id="mail" name="correo-electronico" class="formu__div-input"/>
-                        </div>
-                        <div style="display:inline-grid">
-                            <label for="consulta">Consulta: </label>
-                            <textarea name="consulta" id="consulta" cols="45" rows="8" class="formu__div-input"></textarea>
-                        </div>
-                            <input type="submit" value="Enviar consulta" class="formu__div-boton"/>
-                    </form>
-                </div>            
-            </section>
-        </div>
+                <div class="col-12 col-md-6">
+                    <div style="color: wheat;">
+                        <h3>FORMULARIO DE CONTACTO</h3>
+                        <p>Complete sus datos personales y escriba una consulta:</p>
+                    </div>
+                    <div style="color: white;">
+                        <form action="" style="display: grid;" class="row">    
+                            <div style="display:inline-grid" class="col-sm-6">
+                                <label for="nombreApellido">Nombre y Apellido: </label>
+                                <input type="text" id="nombreApellido" name="nombre-apellido"/>
+                            </div>
+                            <div style="display:inline-grid" class="col-sm-6">
+                                <label for="celular">Celular: </label>
+                                <input type="tel" id="celular" name="numero-de-telefono"/>
+                            </div>
+                            <div style="display:inline-grid" class="col-sm-6">    
+                                <label for="mail">Correo Electrónico: </label>
+                                <input type="email" id="mail" name="correo-electronico"/>
+                            </div>
+                            <div style="display:inline-grid" class="col-sm-12">
+                                <label for="consulta">Consulta: </label>
+                                <textarea name="consulta" id="consulta" cols="45" rows="8"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Enviar</button>
+                        </form>
+                    </div>            
+                </div>
+            </div>
+        </div>     
     </main>
     
 
@@ -112,9 +123,8 @@
                     </a>
                 </div>
         </section>
-    </footer> 
+    </footer>  -->
+</div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
-
 </body>
-
 </html>
