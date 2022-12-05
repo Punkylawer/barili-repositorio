@@ -4,30 +4,37 @@
     grid-row: 2/3;
     overflow: scroll;
 }
-
-.buscar {
-    position:relative;
-    padding:5px;
-    text-align: right;
-        .buscar__input {
-            width: 300px;
-            height:40px;
-            padding:0 20px;
-            font-size:18px;
-            color:#5d6d7e;
-            outline: none;
-            border:1px solid grey;
-            border-radius: 20px;
-                .buscar__boton {
-                    width: 150px;
-                    height:40px;
-                    padding:0 20px;
-                    font-size:18px;
-                    color:#5d6d7e;
-                    outline: none;
-                    border:1px solid grey;
-                    border-radius: 20px;
-                    }
+.seccion-uno {
+    .buscar {
+        position:relative;
+        padding:5px;
+        text-align: right;
+            .buscar__input {
+                width: 300px;
+                height:40px;
+                padding:0 20px;
+                font-size:18px;
+                color:#5d6d7e;
+                outline: none;
+                border:1px solid grey;
+                border-radius: 20px;
+                    .buscar__boton {
+                        width: 150px;
+                        height:40px;
+                        padding:0 20px;
+                        font-size:18px;
+                        color:#5d6d7e;
+                        outline: none;
+                        border:1px solid grey;
+                        border-radius: 20px;
+                        }
+                        .bibloteca {
+                            height: 10em;
+                            width: 100%;
+                            background-size: cover;
+                            background-repeat: no-repeat;
+                            }
+            }
         }
     }
 
@@ -229,52 +236,117 @@
 }
 /* Equipo */
 
-.main {
-    grid-row:2/3;
-    margin-top: 2.5em;
-    overflow: scroll;
-        .curriculum {
-            .cv__div-1 {
-                background-size: cover;
-                background-repeat: no-repeat;
-                height:200px;
+.equipo {
+    .profesional {
+        .profesional__box {
+            padding:1rem;
+            .profesional__box--h5 {
+                font-size: 1.4rem;
+                color:white;
+                font-weight: bold;
+                text-align: center;
             }
-            .cv__div2-2 {
-                background-size: cover;
-                background-repeat: no-repeat;
-                height:200px;
-            }
-            .cv__div3-3 {
-                background-size: cover;
-                background-repeat: no-repeat;
-                height:200px;   
-            }
+        .profesional__box--p {
+            text-align: justify;
+            color:white;
+            font-size: 1.1rem;
         }
-        .carta {
-            .letters__p {
-                color:$ColorPrincipal;
-                font-size: 1.8em;
-                margin: 1em;
-            }
-            .letters_i {
-                background-size: cover;
-                background-repeat: no-repeat;
-                height: 60px;
-                width: 50px;
-            }
         }
     }
+    .noticias {
+        .noticias__div--p { 
+        font-size: 1.5rem;
+        color: white;
+        text-align: center;
+    }
+}
+}
+.carousel-inner {
+    height: 25em;
+    width: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    .carousel-item {
+        background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 25em;
+    width: 50%;
+    }
+}
+
+
+// .main {
+//     grid-row:2/3;
+//     margin-top: 2.5em;
+//     overflow: scroll;
+//         .curriculum {
+//             .cv__div-1 {
+//                 background-size: cover;
+//                 background-repeat: no-repeat;
+//                 height:200px;
+//             }
+//             .cv__div2-2 {
+//                 background-size: cover;
+//                 background-repeat: no-repeat;
+//                 height:200px;
+//             }
+//             .cv__div3-3 {
+//                 background-size: cover;
+//                 background-repeat: no-repeat;
+//                 height:200px;   
+//             }
+//         }
+//         .carta {
+//             .letters__p {
+//                 color:$ColorPrincipal;
+//                 font-size: 1.8em;
+//                 margin: 1em;
+//             }
+//             .letters_i {
+//                 background-size: cover;
+//                 background-repeat: no-repeat;
+//                 height: 60px;
+//                 width: 50px;
+//             }
+//         }
+//     }
+
 /* Contacto */
 
-.main {
-    grid-row: 2/3;
-    overflow: scroll;
+
+    .contacto {
+        .contacto__h2 {
+            color: cornsilk;
+            text-align: center;
+            padding-bottom: 1em;
+        }
+        .contacto__ul {
+            color:cornsilk;
+            list-style: none;
+            line-height: 2em;
+            font-size: 1.5em;
+            text-align: center;
+            padding:1em;
+                .contacto__ul--li {
+                    padding-bottom: 1em;
+                }
+            }
+    }
+    .titulo-formu {
+        color:black;
+        font-size: 1.5rem;
+        text-align: center;
+        padding-bottom: 1em;
     }
                     
-    .contacto__ul {
-        color:$ColorPrincipal;
-        list-style: none;
-        line-height: 2em;
-        font-size: 1.5em;
-        }
+    .div-formu {
+        color:black;
+        align-items: center;
+            .div-formu__consulta {
+                width: 65%;
+            }
+    }
         

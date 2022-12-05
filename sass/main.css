@@ -11,9 +11,7 @@
 }
 
 .header {
-  background-image: url(../imagenes/mar.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-color: #c2c9cd;
   width: 100%;
   height: 50px;
   display: inline-flex;
@@ -24,7 +22,7 @@
 }
 .header .header__h1 {
   font-style: italic;
-  color: #ffffff;
+  color: black;
   padding: 1em;
 }
 .header .header-desktop .header__nav {
@@ -66,12 +64,12 @@
   overflow: scroll;
 }
 
-.buscar {
+.seccion-uno .buscar {
   position: relative;
   padding: 5px;
   text-align: right;
 }
-.buscar .buscar__input {
+.seccion-uno .buscar .buscar__input {
   width: 300px;
   height: 40px;
   padding: 0 20px;
@@ -81,7 +79,7 @@
   border: 1px solid grey;
   border-radius: 20px;
 }
-.buscar .buscar__input .buscar__boton {
+.seccion-uno .buscar .buscar__input .buscar__boton {
   width: 150px;
   height: 40px;
   padding: 0 20px;
@@ -90,6 +88,12 @@
   outline: none;
   border: 1px solid grey;
   border-radius: 20px;
+}
+.seccion-uno .buscar .buscar__input .bibloteca {
+  height: 10em;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .articulo {
@@ -174,63 +178,63 @@
   height: 430px;
 }
 .main .section .nosotros .nosotros__h2 {
-  color: #ffffff;
+  color: black;
   padding: 1em;
   margin: 1em;
   text-align: center;
   letter-spacing: 1.5rem;
 }
 .main .section .nosotros .nosotros__p {
-  color: #ffffff;
+  color: black;
   line-height: 1.7rem;
   font-size: 1.4em;
   text-align: justify;
   text-indent: 2.5em;
 }
 .main .section .nosotros .nosotros__p1 {
-  color: #ffffff;
+  color: black;
   line-height: 1.7rem;
   font-size: 1.4em;
   text-align: justify;
   text-indent: 2.5em;
 }
 .main .section .nosotros .nosotros__p2 {
-  color: #ffffff;
+  color: black;
   line-height: 1.7rem;
   font-size: 1.4em;
   text-align: justify;
   text-indent: 2.5em;
 }
 .main .section .nosotros .nosotros__h2 {
-  color: #ffffff;
+  color: black;
   padding: 1em;
   margin: 1em;
   text-align: center;
   letter-spacing: 1.5rem;
 }
 .main .section .nosotros .nosotros__p {
-  color: #ffffff;
+  color: black;
   line-height: 1.7rem;
   font-size: 1.4em;
   text-align: justify;
   text-indent: 2.5em;
 }
 .main .section .nosotros .nosotros__p1 {
-  color: #ffffff;
+  color: black;
   line-height: 1.7rem;
   font-size: 1.4em;
   text-align: justify;
   text-indent: 2.5em;
 }
 .main .section .nosotros .nosotros__p2 {
-  color: #ffffff;
+  color: black;
   line-height: 1.7rem;
   font-size: 1.4em;
   text-align: justify;
   text-indent: 2.5em;
 }
 .main .section .nosotros .nosotros__p3 {
-  color: #ffffff;
+  color: black;
   line-height: 1.7rem;
   font-size: 1.4em;
   text-align: justify;
@@ -266,28 +270,28 @@
   height: 430px;
 }
 .main .section .areas .areas__h2 {
-  color: #ffffff;
+  color: black;
   padding: 1em;
   margin: 1em;
   text-align: center;
   letter-spacing: 1.5rem;
 }
 .main .section .areas .areas__p {
-  color: #ffffff;
+  color: black;
   line-height: 1.7rem;
   font-size: 1.4em;
   text-align: justify;
   text-indent: 2.5em;
 }
 .main .section .areas .areas__p1 {
-  color: #ffffff;
+  color: black;
   line-height: 1.7rem;
   font-size: 1.4em;
   text-align: justify;
   text-indent: 2.5em;
 }
 .main .section .areas .areas__p2 {
-  color: #ffffff;
+  color: black;
   line-height: 1.7rem;
   font-size: 1.4em;
   text-align: justify;
@@ -307,77 +311,76 @@
 }
 
 /* Equipo */
-.main {
-  grid-row: 2/3;
-  margin-top: 2.5em;
-  overflow: scroll;
+.equipo .profesional .profesional__box {
+  padding: 1rem;
 }
-.main .curriculum .cv__div-1 {
-  background-size: cover;
+.equipo .profesional .profesional__box .profesional__box--h5 {
+  font-size: 1.4rem;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+}
+.equipo .profesional .profesional__box .profesional__box--p {
+  text-align: justify;
+  color: white;
+  font-size: 1.1rem;
+}
+.equipo .noticias .noticias__div--p {
+  font-size: 1.5rem;
+  color: white;
+  text-align: center;
+}
+
+.carousel-inner {
+  height: 25em;
+  width: 50%;
+  background-position: center;
   background-repeat: no-repeat;
-  height: 200px;
-}
-.main .curriculum .cv__div2-2 {
   background-size: cover;
-  background-repeat: no-repeat;
-  height: 200px;
 }
-.main .curriculum .cv__div3-3 {
+.carousel-inner .carousel-item {
+  background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
-  background-repeat: no-repeat;
-  height: 200px;
-}
-.main .carta .letters__p {
-  color: #ffffff;
-  font-size: 1.8em;
-  margin: 1em;
-}
-.main .carta .letters_i {
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 60px;
-  width: 50px;
+  height: 25em;
+  width: 50%;
 }
 
 /* Contacto */
-.main {
-  grid-row: 2/3;
-  overflow: scroll;
+.contacto .contacto__h2 {
+  color: cornsilk;
+  text-align: center;
+  padding-bottom: 1em;
 }
-
-.contacto__ul {
-  color: #ffffff;
+.contacto .contacto__ul {
+  color: cornsilk;
   list-style: none;
   line-height: 2em;
   font-size: 1.5em;
+  text-align: center;
+  padding: 1em;
+}
+.contacto .contacto__ul .contacto__ul--li {
+  padding-bottom: 1em;
 }
 
-.piecontacto {
+.titulo-formu {
+  color: black;
+  font-size: 1.5rem;
+  text-align: center;
+  padding-bottom: 1em;
+}
+
+.div-formu {
+  color: black;
   align-items: center;
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  background-color: #000000;
-  color: #ffffff;
-  height: 130px;
-  bottom: 0;
-  position: absolute;
-  grid-row: 3/4;
 }
-.piecontacto .seccionBaja {
-  display: inline-block;
-  flex-direction: row;
-  justify-content: space-between;
+.div-formu .div-formu__consulta {
+  width: 65%;
 }
-.piecontacto .seccionBaja .seccionBaja__div {
-  display: flex;
-  flex-direction: column;
-  margin: 25px;
-}
-.piecontacto .seccionBaja .piecontacto__div {
-  display: inline;
-  flex-direction: column;
-  margin: 25px;
+
+.footer {
+  color: black;
 }
 
 /* COMIENZO MEDIAS QUERIES */
@@ -395,9 +398,7 @@
     height: -webkit-fill-available;
   }
   .header {
-    background-image: url(../imagenes/mar.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-color: #c2c9cd;
     width: 100%;
     height: 70px;
     display: inline-flex;
@@ -461,38 +462,6 @@
     border: 1px solid grey;
     border-radius: 20px;
   }
-  .piecontacto {
-    grid-area: piecontacto;
-  }
-  .piecontacto {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    background-color: #000000;
-    color: #ffffff;
-    height: 5em;
-    bottom: 0;
-    position: absolute;
-    grid-row: 3/4;
-  }
-  .piecontacto .seccionBaja {
-    flex-direction: column;
-    align-items: center;
-    margin: auto;
-  }
-  .piecontacto .seccionBaja .seccionBaja__h2 {
-    font-size: 1.5em;
-    align-items: center;
-    margin: auto;
-  }
-  .piecontacto .seccionBaja .piecontacto__div {
-    width: 1em;
-    height: 1em;
-    margin: auto;
-  }
 }
 .slidein {
   -webkit-animation-duration: 3s;
@@ -523,17 +492,18 @@
 }
 
 .body {
-  background-color: #8405F0;
-  background-image: url(../imagenes/fondoazul.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-color: #547794;
 }
 
-.contenedor {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-areas: "header header" "main main" "piecontacto piecontacto";
-  background-image: url(../imagenes/fondoazul.jpg);
-  background-size: cover;
+.jumbo-container {
+  color: #fff;
+  overflow: hidden;
+  margin-top: 0px;
+  background-position: center;
   background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: lighten;
+}
+.jumbo-container .lead {
+  font-size: 1.9rem;
 }/*# sourceMappingURL=main.css.map */

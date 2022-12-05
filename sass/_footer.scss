@@ -1,27 +1,3 @@
-.piecontacto {
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    background-color: #000000;
-    color:$ColorPrincipal;
-    height: 130px;
-    bottom: 0;
-    position: absolute;
-    grid-row: 3/4;
-        .seccionBaja {
-            display: inline-block;
-            flex-direction:row;
-            justify-content:space-between;
-            .seccionBaja__div {
-                display:flex;
-                flex-direction:column;
-                margin:25px;
-                }
-                .piecontacto__div {
-                    display:inline;
-                    flex-direction:column;
-                    margin:25px;
-                }
-    }
+.footer {
+    color:black;
 }

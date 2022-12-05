@@ -16,9 +16,10 @@
     }
 
     .header {
-        background-image: url(../imagenes/mar.jpg);
-        background-size: cover;
-        background-repeat: no-repeat;
+        // background-image: url(../imagenes/mar.jpg);
+        // background-size: cover;
+        // background-repeat: no-repeat;
+        background-color: #c2c9cd;
         width: 100%;
         height: 70px;
         display: inline-flex;
@@ -92,41 +93,8 @@
                 }
             }
 
-    .piecontacto {
-        grid-area:piecontacto;
-        }
-
-    .piecontacto {
-        align-items: center;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        background-color: #000000;
-        color:$ColorPrincipal;
-        height: 5em;
-        bottom: 0;
-        position: absolute;
-        grid-row: 3/4;
-            .seccionBaja {
-                flex-direction: column;
-                align-items: center;
-                margin:auto;
-                    .seccionBaja__h2 {
-                        font-size: 1.5em;
-                        align-items: center;
-                        margin:auto;
-                        }
-                        
-                    .piecontacto__div {
-                        width: 1em;
-                        height: 1em;
-                        margin: auto;
-                    }
-        }
-} 
 }
+
 
 .slidein {
     animation-duration: 3s;
@@ -146,3 +114,4 @@
     width:100%;
     }
 }
+
