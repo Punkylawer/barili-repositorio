@@ -14,26 +14,18 @@
 }
 
 .body {
-    // background-color:#8405F0;
-    // background-image:url(../imagenes/fondoazul.jpg);
-    // background-size: cover;
-    // background-repeat: no-repeat;
     background-color:#547794;
 }
 
-// .contenedor {
-//     display:grid;
-//     grid-template-columns: 1fr;
-//     grid-template-areas:
-//     "header header"
-//     "jumbotron jumbotron"
-//     "main main"
-//     "piecontacto piecontacto";
-//     // background-image:url(../imagenes/fondoazul.jpg);
-//     // background-size: cover;
-//     // background-repeat: no-repeat;
-//     background-color:#547794;
-// }
+.contenedor {
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "header header"
+    "main main"
+    "piecontacto piecontacto";
+    background-color:#547794;
+}
 
 .jumbo-container {
     color:#fff;

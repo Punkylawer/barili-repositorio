@@ -1,9 +1,5 @@
 /* Index */
 
-.main {
-    grid-row: 2/3;
-    overflow: scroll;
-}
 .seccion-uno {
     .buscar {
         position:relative;
@@ -94,6 +90,7 @@
         }
         
 /* Nosotros */
+
 .main {
     grid-row: 2/3;
     overflow: scroll;
@@ -185,6 +182,7 @@
     }
 }
 /* Areas */
+
 .main {
     grid-row: 2/3;
     overflow: scroll;
@@ -276,43 +274,6 @@
     width: 50%;
     }
 }
-
-
-// .main {
-//     grid-row:2/3;
-//     margin-top: 2.5em;
-//     overflow: scroll;
-//         .curriculum {
-//             .cv__div-1 {
-//                 background-size: cover;
-//                 background-repeat: no-repeat;
-//                 height:200px;
-//             }
-//             .cv__div2-2 {
-//                 background-size: cover;
-//                 background-repeat: no-repeat;
-//                 height:200px;
-//             }
-//             .cv__div3-3 {
-//                 background-size: cover;
-//                 background-repeat: no-repeat;
-//                 height:200px;   
-//             }
-//         }
-//         .carta {
-//             .letters__p {
-//                 color:$ColorPrincipal;
-//                 font-size: 1.8em;
-//                 margin: 1em;
-//             }
-//             .letters_i {
-//                 background-size: cover;
-//                 background-repeat: no-repeat;
-//                 height: 60px;
-//                 width: 50px;
-//             }
-//         }
-//     }
 
 /* Contacto */
 
