@@ -4,6 +4,7 @@
 }
 .header-desktop {
     display:block;
+    height: 100%;
 }
 
 .header {
@@ -17,7 +18,6 @@
     grid-column: 1/2;
     grid-area: header;
     margin-bottom: 0;
-    padding: 12px;
         .header__h1 {
         font-style:$ItalicStyle;
         color:black;
@@ -31,19 +31,23 @@
                 justify-content:flex-end;
                 height: 100%;
                     .nav__ul {
+                        margin-bottom: 0;
                         display:flex;
                         flex-flow:row;
                         flex-wrap:wrap;
                         align-items: center;
+                        height: 100%;
                             .nav__ul--li {
-                            display:inline-block;
+                                height: 100%;
+                                display:inline-block;
                             }
                             .nav__ul--li-a {
-                                background-color:black;
+                                background-color:#0000009e;
                                 text-decoration: none;
                                 color:#f8f9f9;
                                 padding:10px;
                                 display:block;
+                                height: 100%;
                                     }
                             .nav__ul--li-a:hover {
                                 background-color:#f7dc6f;

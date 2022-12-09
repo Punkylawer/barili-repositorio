@@ -97,6 +97,7 @@
         .section {
             height: 430px;
             .nosotros {
+                padding:1em;
                 .nosotros__h2 {
                     color:$ColorPrincipal;
                     padding:1em;
@@ -189,12 +190,13 @@
         .section {
             height: 430px;
                 .areas {
+                    padding:1em;
                     .areas__h2 {
                         color:$ColorPrincipal;
                         padding:1em;
                         margin:1em;
                         text-align: center;
-                        letter-spacing: 1.5rem;
+                        letter-spacing: 1.0rem;
                     }
                     .areas__p {
                         color:$ColorPrincipal;
@@ -251,13 +253,17 @@
         }
         }
     }
-    .noticias {
-        .noticias__div--p { 
-        font-size: 1.5rem;
-        color: white;
-        text-align: center;
-    }
 }
+.noticias {
+    .noticias__div { 
+        .noticias__div--p { 
+            text-align: center;
+            position: relative;
+            top: 3em;
+            color: currentColor;
+            font-size: 1.2rem;
+        }
+    }
 }
 .carousel-inner {
     height: 25em;
@@ -279,17 +285,19 @@
 
 
     .contacto {
+        text-align: center;
+        font-family: Raleway,"Helvetica Neue",Helvetica,Arial;
         .contacto__h2 {
-            color: cornsilk;
+            color: rgb(0, 0, 0);
             text-align: center;
             padding-bottom: 1em;
         }
         .contacto__ul {
-            color:cornsilk;
+            color:rgb(0, 0, 0);
             list-style: none;
-            line-height: 2em;
-            font-size: 1.5em;
-            text-align: center;
+            line-height: 1em;
+            font-size: 1rem;
+            text-align: left;
             padding:1em;
                 .contacto__ul--li {
                     padding-bottom: 1em;
@@ -304,10 +312,12 @@
     }
                     
     .div-formu {
+        margin: 0px auto;
+        width: 65% !important;
         color:black;
         align-items: center;
             .div-formu__consulta {
-                width: 65%;
+                width: 100%;
             }
     }
         

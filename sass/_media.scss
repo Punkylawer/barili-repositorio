@@ -1,7 +1,8 @@
 /* COMIENZO MEDIAS QUERIES */
-@media screen and (max-width:950px){
+@media screen and (max-width:1010px){
     .header-mobile {
         display:block;
+        padding-right: 1em;
     }
     .header-desktop {
         display:none;
@@ -61,7 +62,7 @@
         grid-template-areas:
         "header"
         "main"
-        "piecontacto";
+        "footer";
         height: 100vh;
     }
     .main {
@@ -93,6 +94,21 @@
                 }
             }
 
+}
+@media screen and (min-width:920px) and (max-width: 1050px){
+    .gmaps{
+        width: 410px;
+    }
+}
+@media screen and (min-width:820px) and (max-width: 920px){
+    .gmaps{
+        width: 360px;
+    }
+}
+@media screen and (min-width:710px) and (max-width: 820px){
+    .gmaps{
+        width: 410px;
+    }
 }
 
 

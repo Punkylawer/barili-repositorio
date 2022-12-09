@@ -8,6 +8,7 @@
 
 .header-desktop {
   display: block;
+  height: 100%;
 }
 
 .header {
@@ -18,7 +19,6 @@
   grid-column: 1/2;
   grid-area: header;
   margin-bottom: 0;
-  padding: 12px;
 }
 .header .header__h1 {
   font-style: italic;
@@ -33,20 +33,24 @@
   height: 100%;
 }
 .header .header-desktop .header__nav .nav__ul {
+  margin-bottom: 0;
   display: flex;
   flex-flow: row;
   flex-wrap: wrap;
   align-items: center;
+  height: 100%;
 }
 .header .header-desktop .header__nav .nav__ul .nav__ul--li {
+  height: 100%;
   display: inline-block;
 }
 .header .header-desktop .header__nav .nav__ul .nav__ul--li-a {
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.6196078431);
   text-decoration: none;
   color: #f8f9f9;
   padding: 10px;
   display: block;
+  height: 100%;
 }
 .header .header-desktop .header__nav .nav__ul .nav__ul--li-a:hover {
   background-color: #f7dc6f;
@@ -59,11 +63,6 @@
 }
 
 /* Index */
-.main {
-  grid-row: 2/3;
-  overflow: scroll;
-}
-
 .seccion-uno .buscar {
   position: relative;
   padding: 5px;
@@ -177,6 +176,9 @@
 .main .section {
   height: 430px;
 }
+.main .section .nosotros {
+  padding: 1em;
+}
 .main .section .nosotros .nosotros__h2 {
   color: black;
   padding: 1em;
@@ -269,12 +271,15 @@
 .main .section {
   height: 430px;
 }
+.main .section .areas {
+  padding: 1em;
+}
 .main .section .areas .areas__h2 {
   color: black;
   padding: 1em;
   margin: 1em;
   text-align: center;
-  letter-spacing: 1.5rem;
+  letter-spacing: 1rem;
 }
 .main .section .areas .areas__p {
   color: black;
@@ -325,10 +330,13 @@
   color: white;
   font-size: 1.1rem;
 }
-.equipo .noticias .noticias__div--p {
-  font-size: 1.5rem;
-  color: white;
+
+.noticias .noticias__div .noticias__div--p {
   text-align: center;
+  position: relative;
+  top: 3em;
+  color: currentColor;
+  font-size: 1.2rem;
 }
 
 .carousel-inner {
@@ -347,17 +355,21 @@
 }
 
 /* Contacto */
+.contacto {
+  text-align: center;
+  font-family: Raleway, "Helvetica Neue", Helvetica, Arial;
+}
 .contacto .contacto__h2 {
-  color: cornsilk;
+  color: rgb(0, 0, 0);
   text-align: center;
   padding-bottom: 1em;
 }
 .contacto .contacto__ul {
-  color: cornsilk;
+  color: rgb(0, 0, 0);
   list-style: none;
-  line-height: 2em;
-  font-size: 1.5em;
-  text-align: center;
+  line-height: 1em;
+  font-size: 1rem;
+  text-align: left;
   padding: 1em;
 }
 .contacto .contacto__ul .contacto__ul--li {
@@ -372,11 +384,13 @@
 }
 
 .div-formu {
+  margin: 0px auto;
+  width: 65% !important;
   color: black;
   align-items: center;
 }
 .div-formu .div-formu__consulta {
-  width: 65%;
+  width: 100%;
 }
 
 .footer {
@@ -384,9 +398,10 @@
 }
 
 /* COMIENZO MEDIAS QUERIES */
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 1010px) {
   .header-mobile {
     display: block;
+    padding-right: 1em;
   }
   .header-desktop {
     display: none;
@@ -432,7 +447,7 @@
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 0.5fr 6fr 1fr;
-    grid-template-areas: "header" "main" "piecontacto";
+    grid-template-areas: "header" "main" "footer";
     height: 100vh;
   }
   .main {
@@ -461,6 +476,21 @@
     outline: none;
     border: 1px solid grey;
     border-radius: 20px;
+  }
+}
+@media screen and (min-width: 920px) and (max-width: 1050px) {
+  .gmaps {
+    width: 410px;
+  }
+}
+@media screen and (min-width: 820px) and (max-width: 920px) {
+  .gmaps {
+    width: 360px;
+  }
+}
+@media screen and (min-width: 710px) and (max-width: 820px) {
+  .gmaps {
+    width: 410px;
   }
 }
 .slidein {
